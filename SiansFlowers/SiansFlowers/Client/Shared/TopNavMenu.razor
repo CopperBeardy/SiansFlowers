@@ -1,20 +1,26 @@
-﻿<div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top">
+﻿<div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark black  fixed-top">
     <div class="container">
-        <NavLink class="navbar-brand text-light" href="/">Top Menu</NavLink>
+        <NavLink class="navbar-brand text-light centurygothic" href="/">Sian's Flowers</NavLink>
         <button class="navbar-toggler" @onclick="ToggleNavMenu" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="@NavMenuCssClass   navbar-collapse d-sm-inline-flex " @onclick="CollapseNavMenu">
-            <ul class="navbar-nav flex-grow-1 text-light ">
+            <ul class="navbar-nav flex-grow-1 text-light justify-content-end">
                 <li class="nav-item">
                     <NavLink class="nav-link" href="" Match="NavLinkMatch.All">Home</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="counter">Counter</NavLink>
+                    <NavLink class="nav-link" href="Weddings">Weddings</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="fetchdata">Fetch data</NavLink>
+                    <NavLink class="nav-link" href="Occasions">Other Occasions</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="Gallery">Gallery</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="Contact">Contact & Location</NavLink>
                 </li>
             </ul>
           
