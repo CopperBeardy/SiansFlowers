@@ -1,12 +1,9 @@
-﻿<div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark black  fixed-top">
-    <div class="container">
-        <NavLink class="navbar-brand text-light centurygothic" href="/">Sian's Flowers</NavLink>
-        <button class="navbar-toggler" @onclick="ToggleNavMenu" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="@NavMenuCssClass   navbar-collapse d-sm-inline-flex " @onclick="CollapseNavMenu">
-            <ul class="navbar-nav flex-grow-1 text-light justify-content-end">
+﻿<div class="navbar navbar-expand-sm navbar-toggleable-sm   fixed-top">
+   
+        <NavLink class="navbar-brand text-dark centurygothic" href="/">Sian's Flowers</NavLink>
+      
+        <div class="  navbar-collapse d-sm-inline-flex " >
+            <ul class="navbar-nav flex-grow-1 text-dark justifymenu">
                 <li class="nav-item">
                     <NavLink class="nav-link" href="" Match="NavLinkMatch.All">Home</NavLink>
                 </li>
@@ -26,24 +23,12 @@
           
         </div>
 
-    </div>
+ 
 
 </div>
 
 
 @code {
-    bool collapseNavMenu = true;
 
-    string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-    void CollapseNavMenu()
-    {
-        collapseNavMenu = true;
-    }
 }
 
