@@ -7,7 +7,6 @@ html, body {
 }
 
 
-
 a, .btn-link {
     color: black;
 }
@@ -29,28 +28,87 @@ app {
     flex-direction: column;
 }
 
-.centurygothic{
-    font-family: ,
+.smallrow {
+    grid-column: 2;
+    grid-row: 2;
 }
 
-.main {
+.indexgrid {
     display: grid;
     min-height: 80vh;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-@font-face{
-    src:url("font/Sunda_Prada.ttf");
+
+.contactlayout {
+    display: grid;
+    min-height: 80vh;
+    min-width: 100vw;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr ;
+    
+}
+.address {
+    align-self: center;
+    font-size: larger;
+    font-weight: 400;
+    padding: 5px;
+    border-left: 1px black solid;
+    margin-bottom: 40px
 }
 
 
-    .main .head-text {
-        grid-column: 2;
-        justify-self: center;
-        align-self: flex-end;       
-        font-weight: 800;
-        grid-row: 1;
+
+.openingtimes {
+   
+    align-self: flex-start;
+    padding: 5px;   
+    border-left: 1px black solid; 
+    
+}
+    .openingtimes table {
+       margin-left:5px;       
+        font-size: larger;
+        font-weight: 400;
     }
+    .openingtimes span {
+        margin-left: 5px;
+        font-size: x-large;
+        font-weight: 700;
+    }
+
+
+
+.locationmap {
+    grid-column: 3/span 2;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat; 
+    justify-self: center;
+    width: 20vw;
+    min-width: 300px;  
+    border-radius: 25px;
+    
+}
+
+
+@font-face{
+    src:url("font/Sunda_Prada.ttf");
+}
+.pagetitle {
+    grid-column: 3;
+    justify-self: center;
+    align-self: flex-end;
+    font-weight: 800;
+    grid-row: 1;
+}
+
+.head-text {
+    grid-column: 2;
+    justify-self: center;
+    align-self: flex-end;
+    font-weight: 800;
+    grid-row: 1;
+}
 .head-image {
     grid-row:2/5;
     grid-column: 1/4;   
@@ -62,7 +120,7 @@ app {
 }
 #bottomparagraph {
     grid-row: 5;
-    grid-column: 1 / span 3;
+    grid-column: 2 ;
     font-size: medium;
     align-self: self-end;
     text-align: center;
@@ -113,14 +171,12 @@ app {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
 
-    .main {
-        
-         margin-top:2em;
+    .indexgrid {
+        margin-top: 2em;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
     }
 
     
@@ -139,41 +195,87 @@ app {
         list-style: none;
         
     }
-    .index {
-        display: grid;
-        min-height: 100vh;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
 
-        .main .head-text {
-            grid-column: 1;
-            justify-self: center;
-            align-self: flex-end;
-            font-weight: 800;
-            grid-row: 1;
-            font-size: larger;
-            text-align: center;
-            margin-top: 3em;
-        }
+
+    .indexgrid .head-text {
+        grid-column: 1;
+        justify-self: center;
+        align-self: flex-end;
+        font-weight: 800;
+        grid-row: 1;
+        font-size: larger;
+        text-align: center;
+        margin-top: 3em;
+    }
 
     .head-image {
         grid-column: 1;
-        grid-row: 2/3;
+        grid-row: 2/4;
         background: url("../images/ar1.jpg");
-        background-position: center;
+     
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     #bottomparagraph {
         grid-column: 1;
-        grid-row: 3;
-        font-size: smaller;
-        align-self: self-end;
-        text-align: center;
+        grid-row: 4;
+        font-size: smaller;       
         font-weight: 600;
-        padding: 20px 10px 0px 10px;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .pagetitle {       
+       align-self:auto;
+        font-weight: 800;      
+        font-size: larger;
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .contactlayout {
+        margin-top: 7em;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        min-width: 80vw;
+    }
+
+    .address {
+        align-self: flex-start;
+        font-size: medium;
+        font-weight: 400;
+        margin: 10px 15px 20px 0px;
+        padding-bottom: 49px;
+    }
+    .openingtimes {         
+        margin: 10px 0px 20px 0px;      
+    }
+        .openingtimes table {
+            
+            font-size: medium;
+            font-weight: 400;
+        }
+
+        .openingtimes span {
+            margin-left: 5px;
+            font-size: medium;
+            font-weight: 700;
+        }
+        .smallrow{
+            display:flex;
+            flex-direction:row;
+            align-self:center;
+
+        }
+    .locationmap {
+        background-image: url(../images/map.png);
+        background-repeat: no-repeat;
+        justify-self: center;
+        width: 80vw;
+        min-width: 300px;     
+        align-self: center;
+        min-height: 45vh;
     }
     
 
@@ -183,20 +285,26 @@ app {
     background-color: #d7d7d7;
     border-color: #d7d7d7;
 }
+
+
+
+
+
+
 @media (min-width: 768px) {
     app {
         flex-direction: row;
     }
-  
 
-    .main .top-row {
+
+    .indexgrid .top-row {
         position: sticky;
         top: 0;
     }
 
-    .main > div {
-        padding-left: 2rem ;
-        padding-right: 1.5rem ;
+    .indexgrid > div {
+        padding-left: 2rem;
+        padding-right: 1.5rem;
     }
 
 }
