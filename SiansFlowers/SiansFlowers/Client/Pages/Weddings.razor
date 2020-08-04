@@ -1,7 +1,58 @@
 ﻿@page "/Weddings"
 
-<h3>Weddings</h3>
 
-@code {
+@using Blazorade.Bootstrap.Components
 
-}
+    <div class="specfic-layout">
+
+        <h2 class="specfic-page-title">Weddings</h2>
+   
+        <div class="description">
+            <p >
+                When it comes to planning a wedding, it can be an anxious time for anyone! At Sian’s Flowers, our aim is to take away all the stress when it comes to  arranging your flowers for your special day!
+            </p>
+            <p >   Each wedding is a unique occasion and we therefore take the time with  all our customers, as we know how important it is for the flowers to  complement and enhance all aspects of your special day. If you find it  is all a bit bewildering and don't know where to start, then we can help and guide you, for after all it is one of the most important days of  your life which deserves an expert florist's attention and planning.</p>
+            <p >
+                At  Sian’s Flowers, we offer you contemporary or traditional designs covering all aspects of your wedding with striking decorative displays using only the finest available flowers.
+
+            </p>
+        </div>
+
+      
+
+        <div class="carousel-right">
+            <Carousel AutoStart="false"
+                      ShowControls="true"
+                      ShowIndicators="true">
+
+                <CarouselItem ImageScaling="ImageScaleMode.Fill"
+                              ImageUrl="../images/ar1.jpg">
+
+                </CarouselItem>
+                <CarouselItem ImageScaling="ImageScaleMode.Fill"
+                              ImageUrl="../images/ar2.jpg">
+
+                </CarouselItem>
+
+
+            </Carousel>
+
+
+        </div>
+        <div class="bottom-list">
+            <ol class="item-list">
+                <li>Bouquets</li>
+                <li>Corsages</li>
+                <li>Center Pieces</li>
+                <li>Bridal Accessories</li>
+                <li>Reception Flowers</li>
+                <li>Bridesmaid Flowers</li>
+                <li>Button Holes</li>
+
+            </ol>
+        </div>
+      
+    </div>
+
+
+
