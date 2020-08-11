@@ -284,6 +284,12 @@ parent .bodyrow{
   
 }
 
+.fa-leaf {
+    color: darkgreen;
+    font-size: small;
+    padding-right: 5px;
+    padding-top: 5px;
+}
 
 @media (max-width: 768px) {
     .content {

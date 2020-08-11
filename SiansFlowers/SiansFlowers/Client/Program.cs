@@ -1,3 +1,5 @@
+using Blazorise;
+using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -14,7 +16,13 @@ namespace SiansFlowers.Client
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services
+                .AddBlazorise()
+                .AddFontAwesomeIcons()
+                ;
+               
 
+          
             await builder.Build().RunAsync();
         }
     }
