@@ -196,8 +196,10 @@ parent .bodyrow{
 
 
 
-.carousel-right {
+.column-right {
     justify-self:center;
+    display: flex;
+    flex-direction:column;
    /* grid-column: 3;    
     height: 30vh;
     max-height: 30vh;*/
@@ -215,25 +217,24 @@ parent .bodyrow{
     font-weight: 600;
 }
 
-.bottom-list {
-    grid-column: 1 /span 4;
-    justify-self: center;   
+.bottom-list {    
     font-weight: 800; 
 
 }
 
 .item-list{
-    display:flex;
+  
     flex-wrap:wrap;
     list-style:none;
+  
   
 }
 
 
 
 .item-list li{
-    display: inline;
-    margin-right:20px
+    display: inline-flex;
+    margin-right:10px
 }
 
 
@@ -423,20 +424,28 @@ parent .bodyrow{
 
 
 
-    .carousel-right {
+    .column-right {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         min-width: 80vw;
+        margin:0px 10px;
+    }
+    .carousel-right {
+        min-width: 50vw;
+        max-width: 50vw;
+        min-height: 50vw;
+        max-height: 50vw;
     }
 
-        .carousel-right .carousel-item {
-            max-height: 50vh;
-            max-width: 50vh;
+        
+        .carousel-right .carousel-inner .h-100 {
+            max-height: 50vw;
+            min-height: 50vw;
         }
 
     .description {
         font-size: smaller;
-        padding: 10px 10px 0px 10px;
+        padding: 0px ;
         align-self: stretch;
         grid-column: 1/4;
     }
@@ -449,6 +458,7 @@ parent .bodyrow{
 
     .item-list {
         display: flex;
+        flex-direction:column;
         flex-wrap: wrap;
         list-style: none;
     }
@@ -456,8 +466,8 @@ parent .bodyrow{
 
 
         .item-list li {
-            display: inline;
-            margin-right: 20px
+            display:flex;
+            margin-right: 0px
         }
 }
 .btn-primary {
