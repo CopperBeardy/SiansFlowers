@@ -5,22 +5,16 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiansFlowers.Client", "SiansFlowers\Client\SiansFlowers.Client.csproj", "{40BE7ACC-3166-4E09-8F37-CA2EE685425A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiansFlowers.Shared", "SiansFlowers\Shared\SiansFlowers.Shared.csproj", "{3A38A84D-461A-489A-984B-23FC33B93CAD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40BE7ACC-3166-4E09-8F37-CA2EE685425A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A38A84D-461A-489A-984B-23FC33B93CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A38A84D-461A-489A-984B-23FC33B93CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A38A84D-461A-489A-984B-23FC33B93CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A38A84D-461A-489A-984B-23FC33B93CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
